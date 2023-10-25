@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family:titulo ;
+    src: url(fontes/Loopi.otf);
+}
+
 
 *{
     margin: 0;
@@ -87,4 +92,213 @@ body{
 
 #anime1:hover, #anime2{
     opacity: 0;
+}
+
+h1{
+    font-family: titulo;
+    color: #ff0101;
+    font-size: 3em;
+    text-align: center;
+    margin: 15px;
+}
+
+#contato{
+    width: 1000px;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
+
+}
+
+input,textarea,select{
+    font-size: 0.9em;
+    background: #f3f2f2;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+#cCor{
+    background: none;
+    padding: 0px;
+
+}
+
+legend{
+    color: #000000;
+    font-family: titulo;
+    font-size: 1.5em;
+
+}
+
+fieldset{
+    border: 1px solid #3a3b3b;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+#sexo{
+    width: 250px;
+
+}
+
+#contato p{
+    padding: 5px;
+}
+#usuario{
+    background: url(img/icontato.png) no-repeat 95% 95%;
+}
+
+
+#endereco{
+    background: url(img/iendereco.png) no-repeat 95% 95%;
+}
+
+#mensagem{
+    background: url(img/imensagem.png) no-repeat 95% 95%
+}
+
+#pedido{
+    background: url(img/ipgto.png) no-repeat 95% 95%
+}
+
+.btn{
+    background: #3a3b3b;
+    color:#ccc ;
+    font-size: 1.1em;
+    padding: 7px;
+    margin: 0px 5px 15px;
+    border-radius: 10px;
+}
+
+#botao{
+    text-align: center;
+}
+
+#rodape{
+    border-top: 2px solid #3a3b3b;
+    padding: 5px;
+
+}
+
+#rodape p{
+    text-align: center;
+    color: #3a3b3b;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3em;
+    margin: 10px 5px;
+}
+
+#rodape a{
+    text-decoration: none;
+}
+
+/*pagina de fotos*/
+
+#galeria1 P{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+    padding: 5px 15px ;
+}
+
+#album-fotos{
+    width: 696px;
+    margin: 0 auto;
+    padding: 50px;
+    list-style: none;
+
+}
+
+#album-fotos li{
+    float: left;
+    width: 198px;
+    height: 200px;
+    margin: 10px;
+    border: 3px solid #ededf3;
+    background: #ededf3;
+}
+
+#album-fotos li .galeria{
+    opacity: 0;
+    color:#f3f2f2;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 0.9em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 5px;
+    line-height: 370px;
+}
+
+#album-fotos li:hover .galeria{
+    opacity: 1;
+}
+
+#album-fotos li:hover{
+transform: scale(1.5);
+}
+
+#album-fotos li.foto1{
+    background: url(img/galeria1.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+
+#album-fotos li.foto1:hover{
+background-position: 0% 0%;
+background-size: 200px 200px;
+}
+
+#album-fotos li.foto2{
+    background: url(img/galeria2.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+
+#album-fotos li.foto2:hover{
+background-position: 0% 0%;
+background-size: 200px 200px;
+}
+
+
+#album-fotos li.foto3{
+    background: url(img/galeria3.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+
+#album-fotos li.foto3:hover{
+background-position: 0% 0%;
+background-size: 200px 200px;
+}
+
+#album-fotos li.foto4{
+    background: url(img/galeria4.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+
+#album-fotos li.foto4:hover{
+background-position: 0% 0%;
+background-size: 200px 200px;
+}
+
+#album-fotos li.foto5{
+    background: url(img/galeria5.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+
+#album-fotos li.foto5:hover{
+background-position: 0% 0%;
+background-size: 200px 200px;
+}
+
+#album-fotos li.foto6{
+    background: url(img/galeria6.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+
+#album-fotos li.foto6:hover{
+background-position: 0% 0%;
+background-size: 200px 200px;
 }
