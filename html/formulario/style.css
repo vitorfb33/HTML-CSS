@@ -178,6 +178,7 @@ fieldset{
 #rodape{
     border-top: 2px solid #3a3b3b;
     padding: 5px;
+    clear: both;
 
 }
 
@@ -302,3 +303,65 @@ background-size: 200px 200px;
 background-position: 0% 0%;
 background-size: 200px 200px;
 }
+
+
+#galeria2{
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+#galeria-foto{
+    list-style: none;
+    margin: 0 auto;
+}
+#galeria-foto li{
+    display: block;
+    float: left;
+    margin: 3px;
+    position: relative;
+}
+
+#galeria-foto img{
+    background: #3a3b3b;
+    padding: 5px;
+    width: 200px;
+    height: 165px;
+
+}
+
+.aumentar:hover{
+    transform: scale(1.5);
+    z-index: 1;  /* z-index jogo a imagem para frente  mas precisa colocar z-index:1 para o outro precisa ser z-index:2*/
+}
+
+
+
+
+/*pagina de videos*/
+
+#radio-tv{
+    width: 900px;
+    height: 600px;
+    background: url(img/radio-tv.png) no-repeat;
+    margin:  5px auto; 
+}
+
+#musica{
+    display: block ;
+    position: relative; /*relative serve para movimetar dentro da div */
+    width: 310px;
+    top: 490px;
+    left: 570px;
+
+}
+
+#filme{
+    display: block ;
+    position: relative; /*relative serve para movimetar dentro da div */
+    width: 450px;
+    top: 50px;
+    left: 82px;
+
+}
+
