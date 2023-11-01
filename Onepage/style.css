@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+
+/*Fontes:
+    Titulo:quicksand
+    texte: josefin Sans
+    
+    cores:
+    
+    #173261
+    #a9a9a9
+    #343538
+    #fff
+    
+    */
+/*quicksand*/
+/* quando puxar uma fonte precisa sempre estar no topo */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+/*josefin Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+/*root criar variavel  / para trocar a cor  /--cor1:*/
+:root{
+--cor1: #173261;
+--cor2: #888585;
+--cor3: #5f5e5e;
+--cor4: #1800f5;
+
+
+/*puxar a fonte*/
+--font-titulo: 'Quicksand', sans-serif;
+--font-texto: 'Josefin Sans', sans-serif;
+}
+
+
+
+
+* {
+    /* para fica perto das bordas do padrão do navegador /Css reset*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+body{
+    font-family: var(--font-texto);
+    font-size: 1.2em;
+}
+
+.container{
+    margin: 0 auto;  /*serve para jogar o conteudo pro meio */
+    
+}
+
+#topo{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.flex{
+    display: flex; /* flex serve para tornar flexivel e resposivel*/
+    justify-content: space-between;
+    
+}
+
+
+/*SMARTPHONE PORTRAIT*/
+header{
+    height: 60px;
+}
+.logo img{
+    width: 128px;
+    height: 128px;
+}
+
+#check{
+    display: none;
+}
+
+label{
+    font-size: 3em;
+    position: fixed;
+    top: 5px;
+    right: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+nav ul{
+    list-style: none;
+    background: var(--cor3);
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+#check:checked ~ ul{  /* ~ serve para fazer a junção do check, o nome é checked*/
+    right: 0;
+    
+}
+nav ul li{
+    padding: 20px;
+    border-bottom: 1px solid var(--cor1);
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+/*SMARTPHONE LANDSCAPE*/
+@media (min-width: 576px) {
+    body {
+        background: #0000ff;
+    }
+    /*layout*/
+    .container{
+        max-width: 540px;
+    }
+}
+
+/*TABLET PORTRAIT*/
+@media (min-width: 768px) {
+    body {
+        background: #ec0b0b;
+    }
+    /*layout*/
+    .container{
+        max-width: 720px;
+    }
+}
+
+/*TABLET LANDSCAPE*/
+@media (min-width: 992px) {
+    body {
+        background: #00ff37;
+    }
+    /*layout*/
+    .container{
+        max-width: 960px;
+    }
+}
+
+/*PC*/
+@media (min-width: 1200px) {
+    body {
+        background: #a200ff;
+    }
+    /*layout*/
+    .container{
+        max-width: 1140px;
+    }
+    header{
+        height: 125px;
+    }
+    .logo img{
+        width: 189px;
+        height: 189px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    label{
+        display: none;
+    }
+    nav ul{
+        position: static;
+        height: auto;
+        margin-top: 50px;
+    }
+    nav ul li{
+        float: left;
+        border: 0;
+    }
+    nav ul li a{
+        color: var(--cor2)
+    }
+    nav ul li a:hover{
+        color: var(--cor4);
+    }
+
+}
