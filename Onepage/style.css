@@ -22,7 +22,7 @@
 
 /*root criar variavel  / para trocar a cor  /--cor1:*/
 :root{
---cor1: #173261;
+--cor1: #d6d7da;
 --cor2: #888585;
 --cor3: #5f5e5e;
 --cor4: #1800f5;
@@ -60,10 +60,32 @@ body{
     bottom: 10px;
 }
 
+.botao{
+    text-decoration: none; /*tirar o sublinhado*/
+    color: var(--cor2);
+    font-size: 1.2em;
+    font-weight: 700; /*deixar em negrito*/
+    background: var(--cor4);
+    padding: 10px 40px; /*espaçamento interno ele a fasta da borda*/
+    border: 2px solid var(--cor2);
+    border-radius: 25px; /*arredondar a borda do Saiba+*/
+
+}
+
 .flex{
     display: flex; /* flex serve para tornar flexivel e resposivel*/
     justify-content: space-between;
     
+}
+
+.flex2{
+    display: flex;
+    align-items: center;
+}
+
+.flex3{
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -112,44 +134,156 @@ nav ul li a{
     color: var(--cor2);
 }
 
+main{
+    height: 75vh;
+    background: url(img/banner_front.jpg);
+    background-size: cover;
+    background-position: center; /* background-position coloca no centro */
+    color: var(--cor1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*centralizar o conteudo*/
+    text-align: center; /*centralizar texto*/
+}
+
+main h1{
+    font-size: 2.5em;
+}
+
+main h2{
+    font-size: 1em;
+    margin: 20px 0px 50px 0px;
+}
+
+/* SOBRE*/
+#sobre{
+    padding: 50px 0px;
+    background: url(img/background5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.destaque_sobre{
+    display: none;
+}
+
+.texto_sobre{
+   color: var(--cor1);
+   padding: 0px 10px; 
+}
+.texto_sobre h2{
+    margin-bottom: 10px;
+}
+
+.topico_sobre{
+    margin-top: 20px; 
+
+}
+
+.topico_sobre img{   
+    margin-right: 10px;  
+}
+
+/*One Page*/
+.video iframe{
+    width: 340px;
+    height: 191px;
+}
+
+#onepage{
+    padding: 50px 10px;
+}
+
+#onepage h2{
+    margin-bottom: 10px;
+
+}
+
+#onepage p{
+    margin-bottom: 25px;
+}
+
+
+
+
+
+
 /*SMARTPHONE LANDSCAPE*/
 @media (min-width: 576px) {
-    body {
+   /* body {
         background: #0000ff;
-    }
+    } */
+
     /*layout*/
     .container{
         max-width: 540px;
     }
+    main h1, main h2{
+        text-shadow: #000 0.5em 0.5em 0.5em; /*colocar sombra nas palavras*/
+    }
+
+    /*One Page*/
+    .video iframe{
+        width: 560px;
+        height: 315px;
+    }
+
 }
+
+
+
 
 /*TABLET PORTRAIT*/
 @media (min-width: 768px) {
-    body {
+   /* body {
         background: #ec0b0b;
-    }
+    } */
+
     /*layout*/
     .container{
         max-width: 720px;
     }
+
+    main{
+        height: 45vh;
+        
+    }
+
+    main h1{
+        font-size: 5.5em;
+    }
+    main h2{
+        font-size: 2em;
+    }
 }
+
+
 
 /*TABLET LANDSCAPE*/
 @media (min-width: 992px) {
-    body {
+    /*body {
         background: #00ff37;
-    }
+    }*/
+
     /*layout*/
     .container{
         max-width: 960px;
     }
+    main{
+        height: 70vh;
+    }
 }
+
+
+
 
 /*PC*/
 @media (min-width: 1200px) {
-    body {
+   /* body {
         background: #a200ff;
-    }
+    } */
+
+
     /*layout*/
     .container{
         max-width: 1140px;
@@ -183,4 +317,23 @@ nav ul li a{
         color: var(--cor4);
     }
 
+    /*SOBRE pc*/
+    .destaque_sobre{
+        display: inline;
+    }
+
+    .destaque_sobre img{
+        border-radius: 50%;
+        margin-right: 50px;
+    }
+
+    #sobre{
+        background-attachment: fixed; /* faz o fundo ficar parado*/
+    }
+
+    /*One Page pc*/
+    .flex3{
+        flex-direction: row;
+        align-items: center;
+    }
 }
