@@ -88,6 +88,42 @@ body{
     flex-direction: column;
 }
 
+.flex4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card{
+    margin-top: 25px;
+    width: 338px;
+    height: 520px;
+    background: var(--cor2);
+    border: 1px solid var(--cor3);
+    border-radius: 25px;
+    text-align: center;
+
+}
+
+.card img{
+    border-radius: 25px 25px 0px 0px;
+}
+
+.card h3{
+    margin-top: 15px;
+}
+.card p{
+    text-align: left;
+    padding: 10px 30px 50px 30px;
+    color: var(--cor1);
+
+}
+
+.card a{
+    padding: 10px 100px;
+    border: 0;
+}
+
 
 /*SMARTPHONE PORTRAIT*/
 header{
@@ -155,6 +191,8 @@ main h2{
     margin: 20px 0px 50px 0px;
 }
 
+
+
 /* SOBRE*/
 #sobre{
     padding: 50px 0px;
@@ -200,6 +238,92 @@ main h2{
 }
 
 #onepage p{
+    margin-bottom: 25px;
+}
+
+
+/*WireFrame*/
+#wireframe{
+    padding: 50px 0px;
+    background:  url(img/background5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.texto-wire{
+    color: var(--cor1);
+    padding: 0px 10px;
+
+}
+
+.texto-wire h2{
+    margin-bottom: 10px;
+}
+
+.texto-wire p{
+    margin-bottom: 40px;
+}
+
+
+.texto-wire span{
+    display: none;
+}
+
+
+.qrcode{
+    display: none;
+}
+
+/*cartões - conteudo*/
+#conteudo{
+    padding: 50px 0px;
+}
+
+#conteudo h2{
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+/*RODAPE*/
+address{
+    padding: 35px 10px 50px 10px;
+    background: url(img/background5.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--cor1);
+}
+
+address a{
+    text-decoration: none;
+    color: var(--cor1);
+
+}
+
+address img{
+    padding-top: 15px;
+
+}
+
+.icone-local{
+    display: none;
+}
+
+.dados{
+    margin: 30px 0px 15px 0px;
+}
+
+.google-maps{
+    display: none;
+}
+
+footer{
+    padding: 50px;
+    background: var(--cor3);
+    color: var(--cor1);
+    text-align: center;
+}
+
+.social{
     margin-bottom: 25px;
 }
 
@@ -335,5 +459,23 @@ main h2{
     .flex3{
         flex-direction: row;
         align-items: center;
+    }
+
+    /*WireFrame*/
+    #wireframe{
+        background-attachment: fixed;
+    }
+
+    #wire-frame{
+        display: inline; /* display: inline     faz a parecer o cometario que tirou por exemplo no celular  */
+    }
+
+    #wireframe span{
+        display: inline;
+        color: var(--cor4);
+        font-weight: 700;
+    }
+    .qrcode{
+        display: inline;
     }
 }
