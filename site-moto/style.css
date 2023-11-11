@@ -1,0 +1,59 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SMARTPHONE PORTRAIT*/
+header{
+    height: 60px;
+}
+.logo img{
+    width: 128px;
+    height: 128px;
+}
+
+
+
+/*SMARTPHONE LANDSCAPE*/
+@media (min-width: 576px){
+
+}
+
+
+
+/*TABLET LANDSCAPE*/
+@media (min-width: 992px){
+
+}
+
+
+
+/*TABLET PORTRAIT*/
+@media (min-width: 768px){
+
+}
+
+
+
+/*PC*/
+@media (min-width: 1200px){
+
+}
